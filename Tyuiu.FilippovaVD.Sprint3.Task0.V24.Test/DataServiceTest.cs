@@ -13,7 +13,7 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task0.V24.Test
             int startValue = 1;
             int stopValue = 7;
 
-            double wait = 0.071;
+            double wait = 0.125;
 
             double res = ds.GetMultiplySeries(value, startValue, stopValue);
 

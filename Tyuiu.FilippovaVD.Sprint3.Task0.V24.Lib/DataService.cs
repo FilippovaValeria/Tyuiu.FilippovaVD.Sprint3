@@ -9,7 +9,7 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task0.V24.Lib
 
             for (int i = startValue; i <= stopValue; i++)
             {
-                double xPower = Math.Pow(value, -1);
+                double xPower = Math.Pow(value, -i);
 
                 double term = Math.Pow(3.0 / (i + xPower), 2);
 
