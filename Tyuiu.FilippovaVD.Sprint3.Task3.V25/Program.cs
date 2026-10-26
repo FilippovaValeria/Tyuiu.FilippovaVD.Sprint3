@@ -17,14 +17,14 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task3.V25
             Console.WriteLine("* Выполнил: Филиппова В. Д. | АСОиУб-26-1                                 *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Используя цикл foreach подсчитать количество букв 'и', находящихся на   *");
+            Console.WriteLine("* Используя цикл foreach подсчитать количество букв 'u', находящихся на   *");
             Console.WriteLine("* соседних позициях в строке.                                             *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string value = "kjhgfии gujut dtuu";
-            char item = 'и';
+            string value = "kjhgfuu gujut dtuu";
+            char item = 'u';
 
             Console.WriteLine($"Строка: {value}");
             Console.WriteLine($"Искомый символ: {item}");

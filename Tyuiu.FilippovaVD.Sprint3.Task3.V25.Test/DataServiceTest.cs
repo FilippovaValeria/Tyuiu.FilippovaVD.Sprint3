@@ -11,8 +11,8 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task3.V25.Test
         {
             DataService ds = new DataService();
 
-            string value = "kjhgfии gujut dtuu";
-            char item = 'и';
+            string value = "kjhgfuu gujut dtuu";
+            char item = 'u';
 
             int wait = 2;
 
