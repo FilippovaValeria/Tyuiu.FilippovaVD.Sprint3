@@ -24,8 +24,8 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task5.V4
 
             int x = 5;
             int startValue1 = 1;
-            int stopValue1 = 1;
-            int startValue2 = 3;
+            int stopValue1 = 3;
+            int startValue2 = 1;
             int stopValue2 = 13;
 
             Console.WriteLine($"X = {x}");
@@ -36,7 +36,7 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task5.V4
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double result = ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2);
+            double result = ds.GetSumSumSeries(x, startValue1, stopValue1, startValue2, stopValue2);
             Console.WriteLine($"Сумма ряда Y = {result}");
 
             Console.ReadLine();
