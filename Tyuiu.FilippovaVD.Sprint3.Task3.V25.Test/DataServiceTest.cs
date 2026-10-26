@@ -14,7 +14,7 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task3.V25.Test
             string value = "kjhgfuu gujut dtuu";
             char item = 'u';
 
-            int wait = 2;
+            int wait = 1;
 
             int res = ds.GetMinCharCount(value, item);
 

@@ -17,8 +17,8 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task3.V25
             Console.WriteLine("* Выполнил: Филиппова В. Д. | АСОиУб-26-1                                 *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Используя цикл foreach подсчитать количество букв 'u', находящихся на   *");
-            Console.WriteLine("* соседних позициях в строке.                                             *");
+            Console.WriteLine("* Используя цикл foreach подсчитать минимальное количество букв 'u',      *");
+            Console.WriteLine("* находящихся на соседних позициях в строке.                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
@@ -34,7 +34,7 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task3.V25
             Console.WriteLine("***************************************************************************");
 
             int result = ds.GetMinCharCount(value, item);
-            Console.WriteLine($"Количество подряд идущих символов '{item}' = {result}");
+            Console.WriteLine($"Минимальное количество подряд идущих символов '{item}' = {result}");
 
             Console.ReadLine();
         }

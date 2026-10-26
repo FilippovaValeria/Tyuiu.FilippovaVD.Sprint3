@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3;
+﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.FilippovaVD.Sprint3.Task3.V25.Lib
 {
@@ -6,9 +7,10 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task3.V25.Lib
     {
         public int GetMinCharCount(string value, char item)
         {
-            int maxCount = 0;     
-            int currentCount = 0; 
-            char prevChar = '\0'; 
+            int minCount = int.MaxValue; 
+            int currentCount = 0;
+            char prevChar = '\0';
+            bool foundAny = false;
 
             foreach (char c in value)
             {
@@ -16,27 +18,41 @@ namespace Tyuiu.FilippovaVD.Sprint3.Task3.V25.Lib
                 {
                     if (prevChar == item)
                     {
-                        currentCount++;
+                        currentCount++; 
                     }
                     else
                     {
-                        currentCount = 1;
+                        currentCount = 1; 
                     }
                 }
                 else
                 {
-                    currentCount = 0;
+                    if (currentCount > 0)
+                    {
+                        foundAny = true;
+                        if (currentCount < minCount)
+                        {
+                            minCount = currentCount;
+                        }
+                        currentCount = 0;
+                    }
                 }
-
-                if (currentCount > maxCount)
-                {
-                    maxCount = currentCount;
-                }
-
                 prevChar = c;
             }
 
-            return maxCount;
+            if (currentCount > 0)
+            {
+                foundAny = true;
+                if (currentCount < minCount)
+                {
+                    minCount = currentCount;
+                }
+            }
+
+            if (!foundAny)
+                return 0;
+
+            return minCount;
         }
     }
 }
